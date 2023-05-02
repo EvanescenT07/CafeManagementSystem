@@ -108,6 +108,7 @@ public class Item extends javax.swing.JFrame {
 
         jPanelHeader = new javax.swing.JPanel();
         jLabelCaffCafe = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanelMenu = new javax.swing.JPanel();
         jLabelMenu = new javax.swing.JLabel();
         jMenuEspresso = new javax.swing.JPanel();
@@ -227,6 +228,8 @@ public class Item extends javax.swing.JFrame {
         jLabelCaffCafe.setText("CAFF CAFE");
         jLabelCaffCafe.setToolTipText("");
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jPanelHeaderLayout = new javax.swing.GroupLayout(jPanelHeader);
         jPanelHeader.setLayout(jPanelHeaderLayout);
         jPanelHeaderLayout.setHorizontalGroup(
@@ -234,13 +237,17 @@ public class Item extends javax.swing.JFrame {
             .addGroup(jPanelHeaderLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabelCaffCafe, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelHeaderLayout.setVerticalGroup(
             jPanelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelHeaderLayout.createSequentialGroup()
                 .addGap(7, 7, 7)
-                .addComponent(jLabelCaffCafe)
+                .addGroup(jPanelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabelCaffCafe))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -1363,6 +1370,7 @@ public class Item extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelAmericano;
     private javax.swing.JLabel jLabelCaffCafe;
     private javax.swing.JLabel jLabelCappucino;
