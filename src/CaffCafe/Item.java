@@ -228,7 +228,7 @@ public class Item extends javax.swing.JFrame {
         jLabelCaffCafe.setText("CAFF CAFE");
         jLabelCaffCafe.setToolTipText("");
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("STILL UNDER DEVELOPING");
 
         javax.swing.GroupLayout jPanelHeaderLayout = new javax.swing.GroupLayout(jPanelHeader);
         jPanelHeader.setLayout(jPanelHeaderLayout);
