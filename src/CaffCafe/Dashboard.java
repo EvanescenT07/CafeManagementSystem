@@ -16,6 +16,16 @@ import javax.swing.tree.DefaultMutableTreeNode;
  *
  * @author Zulfikar Ahmad Aliansyah
  */
+// Class: Dashboard is a class that extends javax.swing.JFrame.
+// Object: Dashboard is also an object created from the Dashboard class.
+// Encapsulation: The setImage() method is an example of encapsulation because it groups together the code needed to set the images for the labels.
+// Polymorphism: There is an example of polymorphism in the init() method, where setImage() is called on the Dashboard object. 
+//                          Since Dashboard is an instance of Dashboard, this is an example of polymorphism.
+// Inheritance: Dashboard extends the javax.swing.JFrame class, which is an example of inheritance.
+
+
+
+// Class: Dashboard is a class that contains the main method and the init and setImage methods.
 public class Dashboard extends javax.swing.JFrame {
 
     private double total = 0.0;
@@ -27,11 +37,13 @@ public class Dashboard extends javax.swing.JFrame {
         init();
     }
 
+     // Polymorphism: Call setImage method on this instance of Dashboard, which is of type Dashboard.
     public void init() {
         setImage();
         setTime();
     }
 
+     // Encapsulation: setImage is a method that encapsulates the logic of setting the images for the labels.
     public void setImage() {
         ImageIcon icon1 = new ImageIcon(getClass().getResource("/Images/Espresso.jpg"));
         ImageIcon icon2 = new ImageIcon(getClass().getResource("/Images/Cappucino.jpg"));
@@ -1341,13 +1353,15 @@ public class Dashboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTree1MouseClicked
 
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Dashboard().setVisible(true);
-            }
-        });
-    }
+public static void main(String args[]) {
+    java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+            // Object: Create an instance of Dashboard using the new keyword.
+            Dashboard dashboard = new Dashboard();
+            dashboard.setVisible(true);
+        }
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonExit;
